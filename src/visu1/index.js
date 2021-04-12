@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Container, Header, Title, Map, Button } from './styles.js';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
@@ -17,7 +17,7 @@ const Visu1 = () => {
         </Button>
       </Header>
       <Title>
-        <h1>Quantidade de Jogadores por Pais</h1>
+        <h1>Quantidade de Jogadores por País</h1>
       </Title>
       <Map>
         <AliceCarousel autoHeight='true' autoWidth='true'>
