@@ -1,17 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+import Visu1 from './visu1';
+import Visu2 from './visu2';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <HashRouter basename="/">
+    <Switch>
+      <Route path="/" component={Visu1} exact />
+      <Route path="/visu2" component={Visu2} exact />
+     </Switch>
+  </HashRouter>,
   document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
